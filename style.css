@@ -9,30 +9,39 @@ html, body {
     background-color: whitesmoke;
 }
 
-header .container{
-    width: 100%;
+header{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     height: 60px;
+    position: relative;
+    z-index: 1;
     background-color: whitesmoke;
+}
+
+header .container{
+    height: 60px;
+}
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section div.content{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 1px 3px #474d50;
+   
 }
 
 
 header .container a {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
     color: black; 
-}
-
-header #home {
-    margin-left: 100px;
-}
-
-header .container nav {
-    margin-right: 100px;  
+    opacity: 0.7;
+    letter-spacing: 1px;
 }
 
 header .container nav ul{
@@ -42,12 +51,98 @@ header .container nav ul{
 }
 
 header .container nav ul li{
+    text-transform: uppercase;
     margin-left: 25px;
-    font-size: 20px;
-    font-weight: bold;
+
+    font-weight: 400;
     /* justify-content: space-between; */
 }
 
 header .container nav ul li a:hover{
     color: #5E35B1;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+section#banner{
+    width: 100%;
+    height: 500px;
+    background-color: springgreen;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    
+}
+
+section#banner .content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section#banner .content h1{
+    font-weight: 400;
+    font-size: 64px;
+    color: #fff;
+}
+
+section#banner .content h2{
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.8;
+}
+
+section#sobre{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+section#sobre .content{
+    flex-direction: column;
+    align-items: center ;
+    justify-content: start;
+    padding: 80px 0;
+    
+}
+section#sobre .content .col-sobre{
+    padding: 20px 0;
+    width: 900px;
+    height: 100%;
+    
+}
+
+section#sobre .content .col-sobre p{
+    margin: 25px 0;
+}
+
+section .col-habilidades{
+    width: 900px;
+    display: flex;
+}
+
+section .col-habilidades .quadros {
+    width: 300px;
+    height: 250px;
+    background-color: #ffffff;
+    /* text-align: center; */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: ease 2s;
+}
+
+section .col-habilidades .quadros:hover{
+    box-shadow: 0 10px 10px red;
+}
+
+section .col-habilidades .quadros ul{
+    list-style: none;
+}
+
+section .col-habilidades .quadros h3{
+    padding: 20px 0;
+    color: #ffa000;
+}
+
+section .col-habilidades .quadros li {
+    padding: 10px;
 }
