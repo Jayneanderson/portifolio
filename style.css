@@ -5,8 +5,10 @@
 }
 
 html, body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', Arial, sans-serif;
     background-color: whitesmoke;
+    text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
+    -webkit-font-smoothing: antialiased !important;
 }
 
 header{
@@ -90,6 +92,7 @@ section#banner .content h2{
     opacity: 0.8;
 }
 
+
 section#sobre{
     width: 100%;
     border: 1px solid black;
@@ -105,17 +108,19 @@ section#sobre .content{
 }
 section#sobre .content .col-sobre{
     padding: 20px 0;
-    width: 900px;
+    max-width: 900px;
     height: 100%;
     
 }
 
 section#sobre .content .col-sobre p{
     margin: 25px 0;
+    max-width: 100%;
+    font-weight: 400;
 }
 
 section .col-habilidades{
-    width: 900px;
+    max-width: 100%;
     display: flex;
 }
 
@@ -124,14 +129,11 @@ section .col-habilidades .quadros {
     height: 250px;
     background-color: #ffffff;
     /* text-align: center; */
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    border: 1px solid transparent;
     margin: 0 2px;
     border-radius: 5px;
     transition: ease 2s;
-}
-
-section .col-habilidades .quadros:hover{
-    box-shadow: 0 10px 10px red;
 }
 
 section .col-habilidades .quadros ul{
@@ -145,4 +147,8 @@ section .col-habilidades .quadros h3{
 
 section .col-habilidades .quadros li {
     padding: 10px;
+}
+
+section .carreira{
+    border: 1px solid aqua;
 }
