@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- serve para deixar a visualização adequada para mobile. Se não colocar, ficará  parecendo um site desktop reduzido -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style/teste.css">
     <!-- owl carousel -->
     <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
@@ -16,20 +17,25 @@
 </head>
 
 <body>
-    <header>
+    <header id="start">
         <section class="container">
             <div class="content">
-                <a href="#" id="home">.jSantos ☰</a>
+                <a href="#" id="home">.JSantos</a>
+                <!-- ☰ -->
                 <nav>
                     <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
     </header>
+
+    <section class="logo">
+        <h1>Evoluindo com você</h1>
+    </section>
 
     <section id="banner"> 
         <div class="content">
@@ -97,7 +103,8 @@
 
     </section>
 
-    <section class="projetos">
+    <section id="projetos" class="projetos">
+        <h1>Projetos</h1>
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img src="/img/icon_lp.svg">
@@ -110,29 +117,47 @@
             <div class="item"><h4>6</h4></div>
         </div>
         <div class="botoes">
-            <button class="play botao">Play</button>
-            <button class="stop botao">Stop</button>
+            <button class="play">▶</button>
+            <button class="stop">◼</button>
         </div>
     </section>
 
-    <section id="contato">
+    <footer  id="contato">
         <div class="content">
-            <div class="message">
-                <h2>ENTRE EM CONTATO</h2>
-                <input type="text" placeholder="Seu nome">
-                <input type="text" placeholder="E-mail">
-                <textarea name="mensagem" id="write" cols="30" rows="10" ></textarea>
-                <button>Enviar</button>
-                <p><a>Ou mande um e-mail para:jayneanderson.santos@gmail.com asasasssssssssssssssssssssssssaaaaaaaaaaaaaa</a></p>
-            </div>
-            
-            <div class="entre-contato">
+            <h1>Entre em Contato</h1>
+            <h2>Jayneanderson</h2>
+            <ul>
+                <li title="Linkedin">
+                    <a><img src="/img/icon/Linkedin.svg" alt="facebook"/></a>
+                </li>
                 
-            </div>
-            
-        </div>
-    </section>
+                <li title="GitHub">
+                    <a><img  src="/img/icon/GitHub.svg" alt="facebook"/></a>
+                </li>
+                
+                <li title="Instagram" >
+                    <a><img src="/img/icon/Instagram.svg" alt="facebook"/></a>
+                </li>
+                
+                <li title="Facebook">
+                    <a><img src="/img/icon/facebook.svg" alt="facebook" title="Facebook"/></a>
+                </li>
+                
+                <li title="YouTube">
+                    <a><img src="/img/icon/YouTube.svg" alt="facebook" title="YouTube"/></a>
+                </li>
 
+                
+            </ul>
+            <a class="email">jayneanderson.santos@gmail.com</a>
+            <div class="home">
+                <p>Início</p>
+                <a href="#start">▲</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/a14a784515.js" crossorigin="anonymous"></script>
 <script src="/script/owl/jquery.min.js"></script>
 <script src="/script/owl/owl.carousel.min.js"></script>
 <script src="/script/owl/setup.js"></script>
