@@ -13,6 +13,10 @@ html, body, button {
     letter-spacing: 1px;
 }
 
+:root {
+    --verde: #64DD17;
+    --gray: #525252;
+}
 header{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     height: 60px;
@@ -62,7 +66,7 @@ header .container nav ul li{
 }
 
 header .container nav ul li a:hover{
-    color: #ffa000;
+    color: #64DD17;
     transition: 0.2s;
 }
 
@@ -72,6 +76,10 @@ section.logo{
     margin: 30px 0;
 }
 
+section.logo h1 {
+    /* color: #525252; */
+    color: var(--verde);
+}
 section#banner{
     max-width: 100%;
     height: 600px;
@@ -120,6 +128,7 @@ section#sobre .content .col-sobre{
     padding: 20px 0;
     max-width: 900px;
     height: 100%;
+    color: var(--verde);
 }
 
 section#sobre .content .col-sobre p{
@@ -262,10 +271,26 @@ footer .home p{
     padding-right: 30px;
 }
 
-footer li:hover{
-    background-color: #BDBDBD;
-    
+footer li:nth-child(1) {
+    background-color: #1092F3;
 }
+footer li:nth-child(2) {
+    background-color: #BDBDBD;
+}
+footer li:nth-child(3) {
+    background-color: deeppink;
+}
+footer li:nth-child(4) {
+    background-color: #3b5998;
+}
+footer li:nth-child(5) {
+    background-color: red;
+}
+
+footer li:hover{
+    background-color: white;
+}
+
 footer .home a{
     text-decoration: none;
     color: black;
@@ -275,6 +300,13 @@ footer .home a{
 footer .home a:hover{
     background-color: #BDBDBD;
 } 
+footer#contato .content h1, h2{
+    color: var(--gray); 
+}
+
+footer#contato .content .email {
+    color: var(--gray); 
+}
 /* 
 use o media para diminuir a fonte do texto acima da foto
 @media (max-width: 720px)
@@ -314,4 +346,8 @@ use o media para diminuir a fonte do texto acima da foto
         justify-content: flex-end;
     }
     
+}
+
+header .start{
+    transition: 0.3s ease;
 }
