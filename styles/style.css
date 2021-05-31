@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway',  sans-serif /* 'Helvetica Neue', 'Helvetica', 'Arial', Arial, sans-serif*/ ;
+    background-color: var(--especialBlue);
+    text-rendering: optimizeLegibility !important; /* deixa a fonte menos "pixalizada". A 2ª propriedade sobreescreve qualquer outra text-rendering*/
+    -webkit-font-smoothing: antialiased !important;
+    letter-spacing: 1px;
+}
+
+:root {
+    --especialBlue: #1f2233;
+    --specialRed: #fd5c55;
+    --specialRedStrong: #FD5C6B;
+    --white: #ffffff;
+    --border: #2B2F44;
+}
+
+/* definindo o header responsivo como none */
+div#response-header {
+    display: none; 
+}
+
+input {
+    display: none;
+}
+
+div.barra h1 {
+    display: inline-block;
+    user-select: none;
+    margin: 20px 0px;
+}
+
+div.barra h1::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
+    background-color: var(--white);
+    transition: 0.3s ease all;
+    animation-duration: 4s;
+    animation-name: barra;
+}
+
+/* @keyframes barra {
+    from {background-color: red; width: 50%;}
+    to {background-color: yellow;}
+} */
+
+div.barra h1:hover::after  {
+    width: 50%;
+    transition: 0.3s ease all;
+}
+
+a {
+    text-decoration: none;
+}
+
+header#start{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: var(--especialBlue);
+}
+
+header#start .container{
+    height: 60px
+}
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+section div.content{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .container a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff; 
+    letter-spacing: 1px;
+}
+
+header .container a#home {
+    color: var(--white);
+}
+
+header .container nav ul{
+    display : flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header .container nav ul li{
+    text-transform: uppercase;
+    /* justify-content: space-between; */
+}
+
+header .container nav ul li a {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0px 5px;
+    border-radius: 3px;
+}
+
+header .container nav ul li a:hover{
+    transition: 0.2s;
+    background-color: var(--specialRed);
+}
+
+header#start a#home-responsivo {
+    display: none;
+}
+
+
+section.logo h1 {
+    /* color: #525252; */
+    color: var(--verde);
+}
+
+div.imagem {
+    background: url('/img/2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section .banner {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .banner div.banner-pessoal {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #1F2240;
+}
+section .banner div.banner-pessoal img {
+    width: 200px;
+    height: 200px;
+    margin-top: -110px;
+    border-radius: 50%;
+    border: 9px solid var(--border);
+}
+
+section .banner div.banner-pessoal h1 {
+    /* font-size: max(36px, 4.399vw); */
+    margin: 0px 0px;
+    color: var(--specialRed);
+}
+
+section .banner div.banner-pessoal span {
+    font-size: 12px;
+    color: var(--white);
+}
+
+section .banner div.banner-pessoal div.icons {
+    margin: 15px 0px;
+}
+
+section .banner div.banner-pessoal div.icons a i {
+    color: var(--specialRed);
+}
+
+section .banner div.banner-pessoal div.icons a i:hover {
+    transition: 0.2s ease;
+    color: var(--white);
+}
+/* estilizando o sobre (about) */
+
+div.about {
+    width: 100%;
+}
+
+div.about div.about-text {
+    text-align: center;
+}
+
+div.description {
+    margin: 20px 0px;
+    text-align: center;
+}
+div.description h3 {
+    color: var(--specialRed);
+}
+
+div.description h1 {
+    color: var(--specialRed);
+}
+
+div.about div.about-text div.description h1 {
+    margin-bottom: 20px;
+}
+
+/* div.about div.about-text div.description h1::after {
+    content: '';
+    width: 110px;
+    height: 4px;
+    
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+div.about div.about-text div.description h1:hover::after {
+    width: 170px;
+    transition: 0.2s ease;
+    background-color: red;
+} */
+
+div.about div.about-text p {
+    color: var(--white);
+    font-size: max(16px, 1.4vw);
+}
+
+div.about div.about-text div.botao {
+    border: 1px solid blue;
+}
+div.about div.about-text a.button {
+    width: 150px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--specialRed);
+    color: var(--white);
+    font-weight: bold;
+}
+
+div.about div.about-text a.button:hover {
+    transition: 0.2s ease;
+    background-color: var(--white);
+    color: var(--especialBlue);
+}
+
+/* estilizando as habilidades */
+
+section.my-skills.content {
+    /* max-width: 1200px; */
+    width: 95%;
+    margin: 0 auto;
+}
+
+section.my-skills div.description {
+    margin-bottom: 0;/* o li já está dando espaço, daí eu zerei bottom */
+}
+
+
+section.my-skills div.skills ul { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.my-skills div.skills ul li {
+   /*  width: 390px; */
+    width: 32.5%;
+    display: flex; 
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--specialRed);
+    font-size: max(19px, 1.4vw);
+}
+
+
+section.my-skills div.skills ul li i {
+    color: var(--specialRed);
+}
+
+section.my-skills div.skills ul li h4 {
+    margin: 7px 0px;
+    color: var(--white);
+}
+
+section.my-skills div.skills ul li span {
+    color: var(--white);
+}
+
+/* estilizando o blog */
+
+
+/* Esta parte foi substituída pela classe barra lá na parte e cima
+
+section.blog div.description div.barra {
+    border: 1px solid green;
+}
+
+section.blog div.description div.barra h1#projetos {
+    display: inline-block;
+    border: 1px solid blue;
+}
+
+
+section.blog div.description div.barra h1#projetos::after {
+    content: '';
+    width: 40%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
+    background-color: aqua;
+    transition: 0.3s ease all;
+}
+
+section.blog div.description div.barra h1#projetos:hover::after  {
+    width: 100%;
+    transition: 0.3s ease all;
+} 
+
+*/
+
+section.blog {
+    margin-bottom: 20px;
+}
+
+section.blog div#projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    
+}
+
+section.blog div#projects div.my-project {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--specialRed);
+}
+
+section.blog div#projects div.my-project:hover { 
+
+}
+
+section.blog div#projects div.my-project img {
+    width: 100%;
+    
+}
+
+section.blog div#projects div.my-project span {
+    margin: 10px 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--border);
+    color: var(--white);
+}
+
+section.blog div#projects div.my-project p {
+    padding: 0px 10px;
+    color: var(--white);
+}
+
+section.blog div#projects div.my-project a {
+    width: 150px;
+    margin: 15px 10px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid var(--specialRed);
+    color: var(--specialRed);
+}
+
+section.blog div#projects div.my-project a:hover {
+    transition: 0.3s ease ;
+    color: var(--white);
+    background-color: var(--specialRed); 
+}
+
+/* Estilizando o Entr em Contato */
+
+section.contact-me {
+    margin-bottom: 20px;
+}
+
+section.contact-me div.description h3 strong {
+    color: var(--white);
+}
+
+.personal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.personal-list-element {
+    /* width: 280px; */
+    width: 15%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--specialRed);
+    margin-right: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.personal-list-element:last-child {
+    margin-right: 0px;
+}
+
+.personal-list-email {
+    font-size: 12px;
+}
+
+section.contact-me div.personal ul li span {
+    color: var(--white);
+}
+
+section.contact-me div.personal ul li i{
+    margin-right: 10px; 
+    color: var(--specialRed);
+}
+
+section.contact-me div.personal ul li div.redes i {
+    margin-right: 5px; 
+    color: var(--white);
+}
+
+section.contact-me div.personal ul li div.redes i:hover {
+    color: var(--specialRed);
+}
+
+section.contact-me div.personal ul li div.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+section.contact-me div.personal ul li h4{
+    color: var(--white);
+}
+
+
+/* Estilizando footer */
+footer.footer {
+    text-align: center;
+}
+
+footer.footer h2 {
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+footer.footer blockquote {
+    color: var(--white);
+
+}
+
+footer.footer h2 strong {
+    color: var(--specialRedStrong);
+}
+
+footer.footer div.icon-footer i {
+    margin: 15px 0px;
+    width: 47px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--specialRed);
+    background-color: var(--border);
+    border-radius: 50%;
+    color: var(--specialRedStrong);
+}
+
+footer.footer div.icon-footer i:hover   {
+    color: var(--white);
+    background-color: var(--specialRed);
+    transition: .3s ease all;
+}

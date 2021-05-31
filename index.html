@@ -7,11 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- serve para deixar a visualização adequada para mobile. Se não colocar, ficará  parecendo um site desktop reduzido -->
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/style/teste.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleresponsive.css">
+    
     <!-- owl carousel -->
-    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
@@ -31,136 +32,219 @@
                 </nav>
             </div>
         </section>
+        <a href="#" id="home-responsivo">.JSantos</a>
     </header>
-
-    <section class="logo">
-        <h1>Evoluindo com você</h1>
-    </section>
-
-    <section id="banner"> 
-        <div class="content">
-            <h1>Jayva Script</h1>
-            <h2>Desenvolvedor Web - Java/Júnior</h2>
-        </div>
-    </section>
-
-    
-    <section id="sobre">
-        <div class= "content">
-            <div class="col-sobre">
-                <h1>SOBRE</h1>
-                <p>“Jack Hannaford heard the sound of the horse behind
-                    him. He knew that the farmer was coming for him and
-                    for the money. Quickly, he came up with a plan. He
-                    knelt by the side of the road, covered his eyes with
-                    one hand, and pointed up to the sky with the other.
-                    The farmer soon reached him and asked: “What are
-                    you doing here by the side of the road? Why are you
-                    protecting your eyes and pointing up to the sky?” “It is
-                    amazing! It is God’s work!” shouted the man. “I see a
-                    wonderful thing!” “What kind of wonderful thing?”
-                    asked the farmer. “A man is walking straight up to
-                    Heaven on a rainbow, just as if it were a road.”</p>
-            </div>
-            <!-- coloque ícones no h3 -->
-            <div class="col-habilidades">
-                <div class="quadros">
-                    <h3>front-end</h3>
-                    <ul>
-                        <li>HTML e CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                
-                <div class="quadros">
-                    <h3>back-end</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Banco de Dados (SQL)</li>
-                        <li>Git</li>
-                    </ul>
-                </div>
-                
-                <div class="quadros">
-                    <h3>soft-skills</h3>
-                    <ul>
-                        <li>Boa comunicação escrita</li>
-                        <li>Empatia</li>
-                        <li>Flexibilidade</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>   
-    
-    <section>
-        <div class="content">
-            <div class="carreira">
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="projetos" class="projetos">
-        <h1>Projetos</h1>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img src="/img/icon_lp.svg">
-            </div>
-
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
-            <div class="item"><h4>5</h4></div>
-            <div class="item"><h4>6</h4></div>
-        </div>
-        <div class="botoes">
-            <button class="play">▶</button>
-            <button class="stop">◼</button>
-        </div>
-    </section>
-
-    <footer  id="contato">
-        <div class="content">
-            <h1>Entre em Contato</h1>
-            <h2>Jayneanderson</h2>
-            <ul>
-                <li title="Linkedin">
-                    <a><img src="/img/icon/Linkedin.svg" alt="facebook"/></a>
-                </li>
-                
-                <li title="GitHub">
-                    <a><img  src="/img/icon/GitHub.svg" alt="facebook"/></a>
-                </li>
-                
-                <li title="Instagram" >
-                    <a><img src="/img/icon/Instagram.svg" alt="facebook"/></a>
-                </li>
-                
-                <li title="Facebook">
-                    <a><img src="/img/icon/facebook.svg" alt="facebook" title="Facebook"/></a>
-                </li>
-                
-                <li title="YouTube">
-                    <a><img src="/img/icon/YouTube.svg" alt="facebook" title="YouTube"/></a>
-                </li>
-
-                
+    <!-- Aqui fica a parte da responsividade. Desative e quando a tela estiver menor ative-a -->
+    <input type="checkbox" name="" id="isClick">
+    <div id="response-header">
+        <label id="click" for="isClick">
+            <span id="menu">☰</span>
+            <span id="cancel">X</span>
+        </label>
+        
+        <header class="header-responsive">
+            <h1>JSantos</h1>
+            
+            <ul id="nav">
+                <li><a href="#" id="home"><i class="fas fa-house-user"></i>Home</a></li>
+                <li><a href="#sobre"><i class="fas fa-fw fa-address-card"></i>Sobre</a></li>
+                <li><a href="#projetos"><i class="fas fa-fw fa-cogs"></i>Projetos</a></li>
+                <li><a href="#contato"><i class="fas fa-fw fa-envelope"></i>Contato</a></li>
             </ul>
-            <a class="email">jayneanderson.santos@gmail.com</a>
-            <div class="home">
-                <p>Início</p>
-                <a href="#start">▲</a>
+        </header>
+    </div>
+    <!-- fim header responsivo -->
+
+    <section>
+        <!-- tag da imagem oficialmente aqui -->
+        <div class="imagem">
+            <div class="banner">
+                <div class="banner-pessoal">
+                    <img src="img/perfil_militar.jpg" alt="">
+                    <h1>Jayneanderson</h1>
+                    <span>Licenciando em Computação</span>
+                    <div class="icons fa-2x">
+                        <a href="https://www.instagram.com/jayneandersonn/"><i class="fab fa-instagram"
+                                title="Instagram" alt="ícone do Instagram na cor vermelha"></i></a>
+                        <a href="https://github.com/Jayneanderson"><i class="fab fa-github" title="GitHub"
+                                alt="ícone do GitHub na cor vermelha"></i></a>
+                        <a href="https://www.youtube.com/channel/UCUtBaMF0ApwYEB6IdJZITAg"><i class="fab fa-youtube"
+                                title="YouTube" alt="ícone do YouTube na cor vermelha"></i></a>
+                        <a href="https://www.linkedin.com/in/jayneandersonn/"><i class="fab fa-linkedin"
+                                title="Linkedin" alt="ícone do Linkedin na cor vermelha"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <div class="about content">
+        <div class="about-text">
+            <div class="description">
+                <div class="barra">
+                    <h1 id="sobre">Sobre mim</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut sem nulla pharetra diam sit amet. Fermentum iaculis
+                    eu non diam phasellus vestibulum lorem sed risus. Dignissim convallis aenean et tortor at
+                    risus viverra adipiscing at.
+                </p>
+            </div>
+            <a href="#" class="button">Baixar CV</a>
+        </div>
+    </div>
+
+    <section class="my-skills content">
+        <div class="description">
+            <div class="barra">
+                <h1 id="my-skills">Minhas Habilidades</h1>
+            </div>
+        </div>
+
+        <div class="skills">
+            <ul>
+                <li>
+                    <i class="fab fa-2x fa-java"></i>
+                    <h4>Programador Java</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </li>
+
+                <li>
+                    <i class="fab fa-2x fa-cuttlefish"></i>
+                    <h4>Programador em C</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </li>
+
+                <li>
+                    <i class="fas fa-2x fa-puzzle-piece"></i>
+                    <h4>Lógica de Programação e Estrutura de Dados</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </li>
+
+                <li>
+                    <i class="fab fa-2x fa-html5"></i>
+                    <h4>HTML5, CSS e JavaScript</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </li>
+
+                <li>
+                    <i class="fas fa-2x fa-database"></i>
+                    <h4>MySQL</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </li>
+
+                <li>
+                    <i class="fab fa-2x fa-git-alt"></i>
+                    <h4>Git</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="blog content">
+        <div class="description">
+            <div class="barra">
+                <h1 id="projetos">Meus Projetos</h1>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="my-project">
+                <img src="img/2.jpg" alt="">
+                <span>Agendamento</span>
+                <p>Este projeto se trata de tal e tal</p>
+                <a href="">Ler mais</a>
+            </div>
+            <div class="my-project">
+                <img src="img/3.jpg" alt="">
+                <span>Agendamento</span>
+                <p>Este projeto se trata de tal e tal</p>
+                <a href="#" class="button">Ler mais</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Entre em contato -->
+    <section class="contact-me content">
+        <div class="description">
+            <div class="barra">
+                <h1>Entre em Contato</h1>
+            </div>
+        </div>
+
+        <div class="personal">
+            <ul class="personal-list">
+                <li class="personal-list-element">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Meu endereço</h4>
+                    </div>
+                    <span>Rua Três Riachos, Centro, Cachoeira-Ba</span>
+                </li>
+                <li class="personal-list-element">
+                    <div class="icon">
+                        <i class="fas fa-share-alt"></i>
+                        <h4>Minhas redes</h4>
+                    </div>
+
+                    <div class="redes fa-lg">
+                        <a href="https://www.instagram.com/jayneandersonn/"><i class="fab fa-instagram"
+                                title="Instagram" alt="ícone do Instagram na cor vermelha"></i></a>
+                        <a href="https://github.com/Jayneanderson"><i class="fab fa-github" title="GitHub"
+                                alt="ícone do GitHub na cor vermelha"></i></a>
+                        <a href="https://www.youtube.com/channel/UCUtBaMF0ApwYEB6IdJZITAg"><i class="fab fa-youtube"
+                                title="YouTube" alt="ícone do YouTube na cor vermelha"></i></a>
+                        <a href="https://www.linkedin.com/in/jayneandersonn/"><i class="fab fa-linkedin"
+                                title="Linkedin" alt="ícone do Linkedin na cor vermelha"></i></a>
+                    </div>
+                </li>
+                <li class="personal-list-element">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Mande um e-mail</h4>
+                    </div>
+                    <span class="personal-list-email">jayneandersonn@gmail.com</span>
+                </li>
+                <li class="personal-list-element">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Me ligue</h4>
+                    </div>
+                    <span>75-983101948</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer content">
+        <h2><strong>{</strong>Obrigado<strong>}</strong></h2>
+        <blockquote>
+            "No mundo da programação, errar é uma lei universal. Permita-se."
+            <cite>Jayneanderson Santos</cite>
+        </blockquote>
+
+        <!--   <div class="icon-footer fa-lg">
+            <a href="#"><i class="fab fa-instagram" title="Instagram"
+                alt="ícone do Instagram na cor vermelha"></i></a>
+            <a href="https://github.com/Jayneanderson"><i class="fab fa-github" title="GitHub"
+                    alt="ícone do GitHub na cor vermelha"></i></a>
+            <a href="#"><i class="fab fa-youtube" title="YouTube"
+                    alt="ícone do YouTube na cor vermelha"></i></a>
+            <a href="#"><i class="fab fa-linkedin" title="Linkedin"
+                    alt="ícone do Linkedin na cor vermelha"></i></a>
+        </div> -->
     </footer>
-    
+
     <script src="https://kit.fontawesome.com/a14a784515.js" crossorigin="anonymous"></script>
-<script src="/script/owl/jquery.min.js"></script>
-<script src="/script/owl/owl.carousel.min.js"></script>
-<script src="/script/owl/setup.js"></script>
+    <script src="/script/owl/jquery.min.js"></script>
+    <script src="/script/owl/owl.carousel.min.js"></script>
+    <script src="/script/owl/setup.js"></script>
+    <script src="/script/index.js"></script>
 </body>
 
 </html>
+
+<!-- Ideia de escolher entre cores que mais agrada a pessoa quando ela entrar,
+daí, quando a pessoa escolher o layout muda -->
