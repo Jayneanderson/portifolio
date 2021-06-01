@@ -1,10 +1,9 @@
 @media only screen and (max-width: 610px) {
     .personal-list {
         /* width: 100%; */
-        grid-template-columns: 500px;
+        grid-template-columns: auto;
     }
     .personal-list-element {
-        width: 400px;
         /* width: 40%;
         margin-bottom: 10px; */
     }

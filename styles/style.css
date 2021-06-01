@@ -410,6 +410,7 @@ section.contact-me div.description h3 strong {
     grid-gap: 5px; /* Atalho para definir a distância entre linhas e colunas.
                        Equivale a -> grid-column-gap: 30px e grid-row-gap: 30px*/
     justify-content: center;
+    justify-items: center;
 }
 .personal-list-element {
     /* width: 280px; 
@@ -423,6 +424,8 @@ section.contact-me div.description h3 strong {
     flex-shrink: 1;*/
     padding: 0px 5px;
     border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .personal-list-element i {
@@ -454,6 +457,7 @@ section.contact-me div.personal ul li div.redes i:hover {
 }
 
 section.contact-me div.personal ul li div.icon {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
