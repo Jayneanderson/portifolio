@@ -1,10 +1,12 @@
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 610px) {
     .personal-list {
-        width: 100%;
+        /* width: 100%; */
+        grid-template-columns: 500px;
     }
     .personal-list-element {
-        width: 40%;
-        margin-bottom: 10px;
+        width: 400px;
+        /* width: 40%;
+        margin-bottom: 10px; */
     }
 
 }
@@ -150,13 +152,13 @@
     /* Responsivo de entre em contato */
     
     section.contact-me div.personal ul {
-        align-items: center;
-        justify-content: center;
+        /* align-items: center;
+        justify-content: center; */
     }
     
     .personal-list-element {
-        height: 150px;
-        margin: 10px;
+        /* height: 150px;
+        margin: 10px; */
     }
 
     section.contact-me div.personal ul li:last-child {

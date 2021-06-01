@@ -68,6 +68,8 @@ header#start{
     height: 60px;
     position: fixed;
     background-color: var(--especialBlue);
+    top: 0;
+    left: 0;
 }
 
 header#start .container{
@@ -82,8 +84,6 @@ header#start .container{
 
 section div.content{
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -104,6 +104,7 @@ header .container a#home {
 }
 
 header .container nav ul{
+    width: 100%;
     display : flex;
     flex-direction: row;
     list-style: none;
@@ -118,7 +119,7 @@ header .container nav ul li a {
     font-size: 15px;
     font-weight: 400;
     padding: 10px;
-    margin: 0px 5px;
+    margin-left: 7px;
     border-radius: 3px;
 }
 
@@ -148,6 +149,7 @@ section .banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 section .banner div.banner-pessoal {
@@ -402,41 +404,44 @@ section.contact-me div.description h3 strong {
 }
 
 .personal-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define a qtd de colunas */
+    grid-gap: 5px; /* Atalho para definir a distância entre linhas e colunas.
+                       Equivale a -> grid-column-gap: 30px e grid-row-gap: 30px*/
     justify-content: center;
 }
 .personal-list-element {
-    /* width: 280px; */
+    /* width: 280px; 
     width: 15%;
     display: flex; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--specialRed);
     margin-right: 5px;
     flex-grow: 1;
-    flex-shrink: 1;
+    flex-shrink: 1;*/
+    padding: 0px 5px;
+    border-radius: 5px;
 }
 
-.personal-list-element:last-child {
+.personal-list-element i {
+    margin-right: 10px; 
+    color: var(--specialRed);
+}
+
+.personal-list-element:first-child .contact-me-element-title {
+    font-size: 12px;
+} 
+
+.personal-list-element:last-child .icon  {
     margin-right: 0px;
+    justify-content: flex-end;
 }
 
 .personal-list-email {
     font-size: 12px;
-}
-
-section.contact-me div.personal ul li span {
     color: var(--white);
-}
-
-section.contact-me div.personal ul li i{
-    margin-right: 10px; 
-    color: var(--specialRed);
 }
 
 section.contact-me div.personal ul li div.redes i {
@@ -450,12 +455,11 @@ section.contact-me div.personal ul li div.redes i:hover {
 
 section.contact-me div.personal ul li div.icon {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
-
-section.contact-me div.personal ul li h4{
+.contact-me-element-title {
     color: var(--white);
 }
 
