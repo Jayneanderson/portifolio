@@ -63,9 +63,9 @@ a {
 }
 
 header#start{
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     position: fixed;
     background-color: var(--especialBlue);
     top: 0;
@@ -73,12 +73,14 @@ header#start{
 }
 
 header#start .container{
-    height: 60px
+    height: 60px;
 }
 
-.content{
-    max-width: 1200px;
-    margin: 0 auto;
+.content {
+    width: 100%;
+    padding: 0 20px;
+    /* max-width: 1200px;
+    margin: 0 auto; */
 }
 
 
@@ -202,6 +204,7 @@ div.description {
     margin: 20px 0px;
     text-align: center;
 }
+
 div.description h3 {
     color: var(--specialRed);
 }
@@ -258,7 +261,7 @@ div.about div.about-text a.button:hover {
 
 section.my-skills.content {
     /* max-width: 1200px; */
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -337,15 +340,15 @@ section.blog {
     margin-bottom: 20px;
 }
 
-section.blog div#projects {
+#projects {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    flex-wrap: wrap;
     
 }
 
-section.blog div#projects div.my-project {
+.my-project {
     width: 49%;
     display: flex;
     flex-direction: column;
@@ -353,15 +356,15 @@ section.blog div#projects div.my-project {
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--specialRed);
+    margin-bottom: 10px;
 }
 
 section.blog div#projects div.my-project:hover { 
 
 }
 
-section.blog div#projects div.my-project img {
-    width: 100%;
-    
+.my-project-img {
+    height: 359.22px;
 }
 
 section.blog div#projects div.my-project span {
@@ -377,7 +380,8 @@ section.blog div#projects div.my-project p {
 }
 
 section.blog div#projects div.my-project a {
-    width: 150px;
+    /* width: 150px; */
+    width: 8rem;
     margin: 15px 10px;
     padding: 15px;
     text-align: center;
